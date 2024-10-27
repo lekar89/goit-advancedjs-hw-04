@@ -1,0 +1,125 @@
+
+
+.input-container {
+  display: flex; /* Используем flexbox для выравнивания */
+  align-items: center; /* Выравнивание по вертикали по центру */
+  gap: 8px; /* Расстояние между полем и кнопкой */
+}
+
+#search-box {
+  width: 100%; /* Устанавливаем ширину 100% */
+  max-width: 272px; /* Максимальная ширина */
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding-left: 16px;
+}
+
+
+
+
+
+
+:root {
+  --items-per-row: 3;
+  --vertical-gap: 24px;
+  --horizontal-gap: 24px;
+}
+
+body {
+  padding: 36px;
+}
+
+.search-form {
+  margin: 0px auto 32px auto;
+
+}
+
+#search-box:focus {
+  border: 2px solid #4e75ff; /* Синяя рамка при фокусе */
+  outline: none; /* Убираем стандартный контур */
+}
+
+.loading {
+  display: none;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 200px));
+  gap: 24px;
+  padding: 0px;
+  margin: 0px;
+  justify-content: center;
+  list-style: none;
+}
+
+.gallery-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #808080;
+  padding-bottom: 16px;
+}
+
+.gallery-link {
+  text-decoration: none;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.info {
+  width: 100%;
+  padding: 8px 0;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.load-more {
+  display: none;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4e75ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.button {
+  background-color: #4e75ff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  width: 91px;
+  height: 40px;
+  margin-left: 8px;
+}
+
+.button:hover {
+  background-color: #6C8CFF; 
+}
